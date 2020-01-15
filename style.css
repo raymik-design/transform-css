@@ -21,7 +21,7 @@
 
 .wrapped i {
   color: black;
-  margin: 10px;
+  margin: 0 10px 10px 0;
   border: 4px solid tomato;
   border-left: none;
   box-sizing: border-box;
@@ -32,6 +32,12 @@
   transform: rotateY(90deg);
   transition: 400ms transform ease-in-out;
   transform-origin: left;
+}
+
+@media (min-width: 768px) {
+  .wrapped i {
+    margin: 0 10px 0 0;
+  }
 }
 
 .wrapped:hover i {
